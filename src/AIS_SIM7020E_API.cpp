@@ -121,6 +121,8 @@ void AIS_SIM7020E_API::waitResponse(String &retdata, String server) {
       - Get device ip after connected to network.
   - getIMSI
       - Get IMSI from eSim on board.
+  - getIMEI
+      - Get IMEI from eSim on board.
   - powerSavingMode
       - Set powerSavingMode : 0 turn off, 1 turn on.
   - checkPSMmode
@@ -144,6 +146,10 @@ String AIS_SIM7020E_API::getDeviceIP() {
 
 String AIS_SIM7020E_API::getIMSI() {
   return atcmd.getIMSI();
+}
+
+String AIS_SIM7020E_API::getIMEI(){
+  return atcmd.getIMEI();
 }
 
 void AIS_SIM7020E_API::powerSavingMode(unsigned int psm, String Requested_PeriodicTAU,

@@ -62,6 +62,7 @@ public:
   String   getDeviceIP();
   String   getSignal();
   String   getIMSI();
+  String   getIMEI();
   radio    getRadioStat();
   pingRESP pingIP(String IP);
   dateTime getClock(unsigned int timezone = DEFAULT_TIMEZONE);
